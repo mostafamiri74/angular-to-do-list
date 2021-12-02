@@ -1,0 +1,9 @@
+<header>
+  <input
+    #todoInput
+    type="text"
+    id="todo-input"
+    (keyup.enter)="addTodo(todoInput.value); todoInput.value = ''"
+    placeholder="please type your task and press enter..."
+  />
+</header>

@@ -1,0 +1,19 @@
+<main>
+  <div class="container">
+    <ul id="todo-list">
+      <li
+        *ngFor="let todo of todos"
+        class="todo-li"
+        [ngClass]="todo.completed ? 'completed' : ''"
+      >
+        {{ todo.todo }}
+        <div class="buttons">
+          <button (click)="removeTodo($event)" class="remove">&#10007;</button>
+          <button (click)="completeTodo($event)" class="complete">
+            &#10004;
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</main>

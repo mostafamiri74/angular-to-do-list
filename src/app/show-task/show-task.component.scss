@@ -1,0 +1,46 @@
+ul {
+  padding: 0;
+
+  li {
+    background: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.completed {
+  opacity: 0.5;
+}
+
+.buttons {
+  float: right;
+}
+
+.buttons button {
+  cursor: pointer;
+  border: 0.15rem solid transparent;
+  vertical-align: middle;
+  width: 2.4rem;
+  height: 2.4rem;
+  transition: background 0.2s ease;
+  border-radius: 3rem;
+  margin: 0 0.3rem;
+}
+
+.buttons button.complete {
+  border: 0.1rem solid #228b22;
+}
+
+.buttons button.complete:hover {
+  background: #fff;
+}
+
+.buttons button.remove {
+  background: #c0cecb;
+}
+.buttons button.remove:hover {
+  background: #e85656;
+}
